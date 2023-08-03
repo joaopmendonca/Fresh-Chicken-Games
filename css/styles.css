@@ -1,0 +1,153 @@
+body{
+    background-color: #F1AC2A;
+}
+
+Header .menu{
+    height: 80px;   
+    background-color: #CD683C;
+} 
+
+.menu__elements{
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    width: 90%;
+}
+
+.menu__elements img {
+    height: 80%;
+    transition: transform 0.3s; /* Adiciona uma transição suave de 0.3 segundos no tamanho da imagem */
+    cursor: pointer; /* Define o cursor do mouse como uma mãozinha para indicar que é interativo */
+}
+
+.menu__elements img:hover {
+    animation: tremidinho 0.3s ease-in-out infinite; /* Aplica a animação tremidinho */
+}
+
+@keyframes tremidinho {
+    0% { transform: translate(-2px, -2px); } /* Início da animação com uma leve translação para cima e para a esquerda */
+    50% { transform: translate(2px, 2px); } /* Metade da animação com uma leve translação para baixo e para a direita */
+    100% { transform: translate(-2px, -2px); } /* Fim da animação com uma leve translação para cima e para a esquerda novamente */
+}
+
+Header nav{
+    display: flex;
+    font-family: 'League Spartan', sans-serif;
+}
+
+header a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    margin: 0rem 1rem 0rem 1rem;
+    font-size: 1.7em;
+    font-weight: 400;
+    transition: color 0.3s, transform 0.3s; /* Adiciona uma transição suave de 0.3 segundos na mudança de cor e tamanho */
+    cursor: pointer; /* Define o cursor do mouse como uma mãozinha para indicar que é interativo */
+}
+
+/* Efeito quando o mouse passar por cima do link */
+header a:hover {
+    color: orange; /* Altera a cor do texto para laranja quando o mouse passar por cima */
+    transform: scale(1.05); /* Aumenta o tamanho do elemento em 5% */
+}
+
+.banner {
+    height: 600px;
+    background-image: url("/images/Pattern_laranja.png");
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área do contêiner */
+    background-position: center; /* Centraliza a imagem horizontalmente e verticalmente */
+
+    display: flex; /* Adiciona o display flex para os elementos filhos serem centralizados */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+.banner img{
+    height: 80%;
+    border-radius: 5%;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5); /* Defina o valor da sombra conforme necessário */
+}
+
+.section{
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+.content{
+    width: 90%;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.content h2{
+    color: #CC673A;
+    font-size: 3rem;
+    
+}
+
+.content p{
+    color:white;
+    font-size: 2rem;
+    text-align: justify;
+    font-weight: 300;
+}
+
+.content .content__media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content__image img{
+    height: 150px;
+}
+
+.content .form-container {
+    display: flex;
+    flex-direction: column; /* Define a direção dos elementos filhos para coluna (um abaixo do outro) */
+    align-items: center; /* Centraliza os elementos filhos na horizontal */
+    margin-top: 20px; /* Adicione uma margem superior para separar o formulário do título */
+}
+
+.content form {
+    display: flex;
+    flex-direction: column; /* Define a direção dos elementos filhos para coluna (um abaixo do outro) */
+}
+
+.content form input[type="submit"] {
+    margin-top: 10px; /* Adicione uma margem superior para separar o botão do restante do formulário */
+    width: 100px;
+}
+
+
+/* Estilização para o rodapé */
+footer {
+    background-color: #CC673A;
+    height: 8rem;
+    font-size: 1.6rem;
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza verticalmente o conteúdo do rodapé */
+    justify-content: center;
+}
+
+/* Estilização para a div dos ícones */
+.footer-icons {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center;
+    margin-top: 10px; /* Espaçamento superior para separar dos textos */
+}
+
+/* Estilização para as imagens (ícones) */
+.footer-icons img {
+    width: 30px; /* Define o tamanho das imagens */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 0 10px; /* Espaçamento lateral entre os ícones */
+}
+

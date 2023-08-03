@@ -1,52 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <Header>
-        <nav>
-            <li><a href="#">Games</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </nav>
+        <div class="menu">
+            <div class="menu__elements">
+                <img src="/images/FreshChickenLogoPequeno.png" alt="logo fresh chicken">
+                <nav>
+                    <a href="#">Games</a>
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact Us</a>
+                </nav>
+            </div>          
+        </div>
     </Header>
 
-   <section class="banner">
+    <section class="banner">
         <!-- Conteúdo do banner aqui -->
         <img src="/Images/banner_SuperDuckMadness.png" alt="Banner">
     </section>
-    <section class="home">
-        <h2>Home</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque nulla sit amet justo tempus, quis lobortis nisi condimentum.</p>
-        <img src="Images/Logo_SuperDuckMadness.png" alt="Logo Super Duck Madness">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/vEesjY61SSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <section class="section">
+        <div class="content">
+            <h2>Home</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque nulla sit amet justo tempus,
+                quis lobortis nisi condimentum.</p>
+            <div class="content__media">
+                <div class="content__image">
+                    <img src="Images/Logo_SuperDuckMadness.png" alt="Logo Super Duck Madness">
+                </div>
+                <div class="content__video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vEesjY61SSU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                        
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="aboutus">
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque nulla sit amet justo tempus, quis lobortis nisi condimentum.</p>      
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod nisi eu bibendum viverra. Aenean nec odio vel sapien rhoncus ultricies. Nullam id nunc quis metus faucibus elementum. Sed tincidunt bibendum arcu eu ultrices. Donec ullamcorper enim ac vestibulum interdum. Proin bibendum euismod sem, vel malesuada justo accumsan in. Quisque et arcu non massa scelerisque facilisis. Sed eget nulla et erat dignissim pellentesque eu vel libero. Vestibulum et sapien at mauris varius luctus vel eget sapien. In vel turpis ipsum. Maecenas non quam a odio sodales congue. Suspendisse potenti. Fusce vitae arcu quis felis tincidunt dapibus. Nulla facilisi. Praesent efficitur massa non arcu faucibus, nec dapibus purus ultrices. 
+
+    <section class="section">
+        <div class="content">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque nulla sit amet justo tempus,
+                quis lobortis nisi condimentum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod nisi eu bibendum viverra.
+                Aenean
+                nec odio vel sapien rhoncus ultricies. Nullam id nunc quis metus faucibus elementum. Sed tincidunt
+                bibendum
+                arcu eu ultrices. Donec ullamcorper enim ac vestibulum interdum. Proin bibendum euismod sem, vel
+                malesuada
+                justo accumsan in. Quisque et arcu non massa scelerisque facilisis. Sed eget nulla et erat dignissim
+                pellentesque eu vel libero. Vestibulum et sapien at mauris varius luctus vel eget sapien. In vel turpis
+                ipsum. Maecenas non quam a odio sodales congue. Suspendisse potenti. Fusce vitae arcu quis felis
+                tincidunt
+                dapibus. Nulla facilisi. Praesent efficitur massa non arcu faucibus, nec dapibus purus ultrices. </p>
+
+        </div>
+
     </section>
-    <section class="contactus">
-        <h2>Contact Us</h2>
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-            
-            <input type="submit" value="Enviar">
-        </form>
+
+    <section class="section">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
     </section>
+
     <footer>
+        <div class="footer-icons">
+            <img src="/images/instagram_icon.svg" alt="logo instagram">
+            <img src="/images/twitter_icon.svg" alt="logo instagram">
+            <img src="/images/linkedin_icon.svg" alt="logo instagram">
+        </div>
         <p>© 2022 Fresh Chicken Games</p>
     </footer>
+
 </body>
+
 </html>
